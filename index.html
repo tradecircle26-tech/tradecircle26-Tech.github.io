@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vofolo Coaching Classes | बेहतर भविष्य की ओर पहला कदम</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        @import url('https://googleapis.com');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-700 text-white p-2 rounded-lg font-bold text-xl">VCC</div>
+                <span class="text-xl sm:text-2xl font-bold text-blue-900">Vofolo Coaching Classes</span>
+            </div>
+            <nav class="hidden lg:flex space-x-6 font-medium text-sm">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#courses" class="hover:text-blue-600 transition">Courses</a>
+                <a href="#fees" class="hover:text-blue-600 transition">Fee Structure</a>
+                <a href="#faculty" class="hover:text-blue-600 transition">Teachers</a>
+                <a href="#results" class="hover:text-blue-600 transition">Results</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </nav>
+            <a href="#demo-form" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2.5 rounded-full shadow transition text-sm">
+                Free Demo Class
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-amber-500/20 text-amber-300 border border-amber-400/30 px-4 py-1 rounded-full text-sm font-semibold">
+                    🚀 Admissions Open for New Session 2026-27
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-bold mt-4 leading-tight">
+                    सफलता की सही शुरुआत <span class="text-amber-400">Vofolo Coaching Classes</span> के साथ
+                </h1>
+                <p class="mt-4 text-blue-100 text-lg">
+                    अनुभवी शिक्षक, छोटे बैच, साप्ताहिक टेस्ट और हर छात्र पर व्यक्तिगत ध्यान। बोर्ड परीक्षाओं और प्रतियोगी परीक्षाओं में शानदार परिणाम की गारंटी।
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#fees" class="bg-white text-blue-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition">
+                        फीस और बैच देखें
+                    </a>
+                    <a href="tel:+919876543210" class="border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition">
+                        <i class="fas fa-phone-alt mr-2"></i> अभी कॉल करें
+                    </a>
+                </div>
+            </div>
+
+            <!-- Inquiry Form Card -->
+            <div id="demo-form" class="bg-white text-slate-800 p-8 rounded-2xl shadow-2xl">
+                <h3 class="text-2xl font-bold text-blue-900">फ्री डेमो क्लास बुक करें</h3>
+                <p class="text-slate-500 text-sm mt-1">नीचे जानकारी भरें, हमारी टीम आपको जल्द संपर्क करेगी।</p>
+               
+                <form onsubmit="sendToWhatsApp(event)" class="mt-6 space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">छात्र का पूरा नाम *</label>
+                        <input type="text" id="studentName" required placeholder="उदा. राहुल शर्मा" class="w-full mt-1 px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">मोबाइल नंबर (WhatsApp) *</label>
+                        <input type="tel" id="studentPhone" required placeholder="उदा. 9876543210" class="w-full mt-1 px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">क्लास / कोर्स चुनें *</label>
+                        <select id="studentCourse" class="w-full mt-1 px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                            <option value="Class 9th & 10th Foundation">Class 9th & 10th (All Subjects)</option>
+                            <option value="Class 11th & 12th Science (PCM/PCB)">Class 11th & 12th Science (PCM/PCB)</option>
+                            <option value="Class 11th & 12th Commerce">Class 11th & 12th Commerce</option>
+                            <option value="JEE / NEET Target Batch">JEE / NEET Target Batch</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i> WhatsApp पर इंक्वायरी भेजें
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="bg-white py-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-3xl font-bold text-blue-700">10+ वर्ष</div>
+                <div class="text-slate-600 text-sm mt-1">शिक्षण अनुभव</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-blue-700">1,500+</div>
+                <div class="text-slate-600 text-sm mt-1">सफल छात्र</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-blue-700">98%</div>
+                <div class="text-slate-600 text-sm mt-1">बोर्ड परीक्षा रिज़ल्ट</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-blue-700">25 छात्र</div>
+                <div class="text-slate-600 text-sm mt-1">प्रति बैच सीमा</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold text-blue-950">हमारे प्रमुख कोर्सेस</h2>
+            <p class="text-slate-600 mt-2">हर कक्षा और लक्ष्य के लिए विशेष रूप से तैयार किए गए बैच</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <!-- Course 1 -->
+            <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-xl transition">
+                <div class="bg-blue-700 text-white p-4 font-bold text-lg">Class 9th & 10th Foundation</div>
+                <div class="p-6">
+                    <p class="text-slate-600 text-sm">गणित, विज्ञान और अंग्रेजी की मजबूत नींव। बोर्ड परीक्षा पैटर्न के अनुसार नियमित अभ्यास।</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-700">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> NCERT + Reference Books कवर</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> हर रविवार साप्ताहिक टेस्ट</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> डाउट क्लियरिंग सेशन</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-xl transition">
+                <div class="bg-indigo-700 text-white p-4 font-bold text-lg">Class 11th & 12th Science</div>
+                <div class="p-6">
+                    <p class="text-slate-600 text-sm">Physics, Chemistry, Maths और Biology की गहराई से तैयारी बोर्ड और एंट्रेंस के लिए।</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-700">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> अनुभवी विषय विशेषज्ञ</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> प्रैक्टिकल और नोट्स की सुविधा</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> प्री-बोर्ड टेस्ट सीरीज़</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-xl transition">
+                <div class="bg-amber-600 text-white p-4 font-bold text-lg">JEE / NEET Target Batch</div>
+                <div class="p-6">
+                    <p class="text-slate-600 text-sm">प्रतियोगी परीक्षाओं में टॉप रैंक हासिल करने के लिए विशेष रणनीति और मॉक टेस्ट।</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-700">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> ऑल इंडिया टेस्ट पैटर्न</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> डेली प्रैक्टिस पेपर्स (DPP)</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> वन-टू-वन मेंटरशिप</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
